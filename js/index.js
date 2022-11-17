@@ -37,6 +37,63 @@ const siteContent = {
     },
   };
   
-  // Example: Update the img src for the logo
-  let logo = document.getElementById("logo-img");
-  logo.setAttribute('src', siteContent["nav"]["img-src"])
+  // // Example: Update the img src for the logo
+    let logo = document.getElementById("logo-img");
+    logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+     
+    const firstElement = document.querySelector("nav")
+    firstElement.textContent = siteContent["nav"]["nav-item-1"]
+    // const cta = document.querySelectorO("cta")
+    // cta.textContent = siteContent["cta"]["h1"]
+    
+    // const secondElement = document.querySelector("nav")
+    // secondElement.textContent = siteContent["nav"]["nav-item-2"]
+
+    // const thirdElement = document.querySelector("nav")
+    // thirdElement.textContent = siteContent["nav"]["nav-item-3"]
+
+    // const fourthElement = document.querySelector("nav")
+    // fourthElement.textContent = siteContent["nav"]["nav-item-4"]
+
+    // const fifthElement = document.querySelector("nav")
+    // fifthElement.textContent = siteContent["nav"]["nav-item-5"]
+
+    // const lastElement = document.querySelector("nav")
+    // lastElement.textContent = siteContent["nav"]["nav-item-6"]
+
+
+     const img = document.querySelector("#cta-img" )
+     img.setAttribute("src",siteContent["cta"]["img-src"])
+
+     const button = document.querySelector(".cta-text, button" )
+     button.textContent = siteContent["cta"].button
+     const startButton = document.querySelector(".cta-text")
+     startButton.textContent = siteContent["cta"].button
+
+     const centerImg = document.querySelector(" .middle-img")
+      centerImg.setAttribute("src", siteContent["main-content"]["middle-img-src"])
+
+
+      const topContent = document.querySelectorAll(".top-content")
+        topContent.textContent = siteContent["main-content"]["features-h4"]["features-content"]
+
+
+        const aboutContent = document.querySelector(".text-content")
+        aboutContent.textContent = siteContent["main-content"]["about-content"]
+
+
+        
+      
+
+       const productContent = document.querySelector(".bottom-content ")
+       productContent.textContent = siteContent["main-content"]["product-content"]
+
+
+    const domText = document.querySelector(".cta-text, h1")
+     domText.textContent = siteContent["cta"].h1
+
+
+
+
+  
